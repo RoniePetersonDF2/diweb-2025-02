@@ -7,25 +7,23 @@
     <title>Exemplo 03</title>
 </head>
 <body>
-    <h1>Trabalhando com formulários - textarea e type=file</h1>
+    <h1>Trabalhando com formulários - outros tipos</h1>
     <form method="post" enctype="multipart/form-data">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome"placeholder="Informe seu nome." size="50" 
-            required autofocus>
+        <input type="text" name="nome" id="nome" size="50" required autofocus><span>(*)</span>
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="Informe seu e-mail"
-            required size="50">
+        <input type="email" name="email" id="email" size="50" required><span>(*)</span>
         <label for="tipo">Tipo</label>
         <select name="tipo" id="tipo">
-            <option value="elogio">Elogio</option>
-            <option value="sugestao">Sugestão</option>
-            <option value="reclamacao">Reclamação</option>
+            <option>Elogio</option>
+            <option>Sugestão</option>
+            <option>Reclamação</option>
         </select>
-        <label for="descricao">Descrição'</label>
-        <textarea name="descricao" id="descricao" rows="5" cols="50"></textarea>
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao" cols="50" rows="5"></textarea>
         <hr>
         <label for="anexo">Anexo</label>
-        <input type="file" name="anexo" id="anexo" accept="pdf">
+        <input type="file" name="anexo" id="anexo" accept=".pdf">
         <hr>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">

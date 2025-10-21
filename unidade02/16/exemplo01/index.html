@@ -6,22 +6,22 @@
     <title>Exemplo 01</title>
 </head>
 <body>
-    <h1>Trabalhando com input e outros tipos</h1>
-    <form method="get">
+    <h1>Trabalhando com formulários outros tipos de input</h1>
+    <form>
         <label for="numero">Número</label>
-        <input type="number" name="numero" id="numero" min="5" max="10" value="5"
-            required autofocus>
+        <input type="number" name="numero" id="numero" min="5" max="10" value="5" required autofocus>
+        <br>
         <label for="telefone">Telefone</label>
-        <input type="tel" name="telefone" id="telefone" >
+        <input type="tel" name="telefone" id="telefone" required placeholder="(dd) 9.99999-9999">
         <hr>
-        <label for="datanascimento">Data de nascimento</label>
-        <input type="date" name="datanascimento" id="datanascimento" min="1970-01-01">
+        <label for="data">Data de nascimento</label>
+        <input type="date" name="data" id="data" required value="2025-10-21" min="2025-10-01">
         <br>
-        <label for="dataehora">Data e hora</label>
-        <input type="datetime-local" name="dataehora" id="dataehora">
+        <label for="datahora">Data e hora</label>
+        <input type="datetime-local" name="datahora" id="datahora">
         <br>
-        <label for="hora">Hora</label>
-        <input type="time" name="hora" id="hora" value="08:00" min="07:00" max="18:00">
+        <label for="hora">Hora início</label>
+        <input type="time" name="hora" id="hora">
         <hr>
         <label for="cor">Cor</label>
         <input type="color" name="cor" id="cor">
