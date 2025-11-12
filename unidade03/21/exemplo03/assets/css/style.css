@@ -1,0 +1,19 @@
+.container {
+    border: 1px solid #000;
+    width: 100%;
+    height: 400px;
+    display: flex;
+   align-items: stretch;
+}
+.box01 {
+    background-color: blueviolet;
+}
+.box02{
+    background-color: cornflowerblue;
+}
+.box03 {
+    background-color: crimson;
+}
+div {
+    margin: 5px;    
+}
